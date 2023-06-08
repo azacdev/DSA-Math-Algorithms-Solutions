@@ -1,1 +1,2 @@
-O(n) Linear Time / Space Complexity
+console.log(fibonacci(6))
+// console.log(fibonacci(9))
