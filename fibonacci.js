@@ -7,11 +7,11 @@
 // fibonacci(7) = [0,1,1,2,3,5,8]
 
 function fibonacci(n) {
-  let fib = [0,1]
+  let fib = [0, 1];
   for (i = 2; i < n; i++) {
-      fib[i] = fib[i-1] + fib[i-2] 
+    fib[i] = fib[i - 1] + fib[i - 2];
   }
-  return fib
+  return fib;
 }
 
 // First Iteration i = 2 (fib[i-1] + fib[i-2] = fib[i-1] + fib[i-0] (second and first items on the list which is 1 + 0)) = [0,1,1]
@@ -19,12 +19,11 @@ function fibonacci(n) {
 // Third Iteration i = 4 (fib[i-1] + fib[i-3] = fib[i-2] + fib[i-1] (fourth and third items on the list which is 2 + 1)) =[0,1,1,2,3]
 // And so on
 
-console.log(fibonacci(4))
-console.log(fibonacci(5))
-console.log(fibonacci(9))
+console.log(fibonacci(4));
+console.log(fibonacci(5));
+console.log(fibonacci(9));
 
 // O(n) Linear Time / Space Complexity (Single Loop as the value of n increases the time complexity also increases)
-
 
 // PRIME NUMBER
 
