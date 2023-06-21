@@ -26,3 +26,33 @@ console.log(factorial(5));
 console.log(factorial(7));
 
 // O(n) Linear Time / Space Complexity (Single Loop as the value of n increases the time complexity also increases)
+
+// Recursive Factorial
+
+//5! = 5*4*3*2*1
+//4! = 4*3*2*1
+//3! = 3*2*1
+//2! = 2*1
+//1! = 1*1
+
+// n! = n * (n-1) 
+// e.g 5 = 5 * (5-1)!
+// 5-1 = 4
+// 5 = 5 * (4)!
+
+// n! = n * (n-1) 
+// e.g 7 = 7 * (7-1)!
+// 7-1 = 6
+// 7 = 7 * (6)!
+
+function recursiveFactorial(n) {
+  if ( n === 0 ) {
+    return 1
+  }
+
+  return n * recursiveFactorial(n-1)
+}
+
+console.log(recursiveFactorial(5));
+console.log(recursiveFactorial(6));
+console.log(recursiveFactorial(7));
