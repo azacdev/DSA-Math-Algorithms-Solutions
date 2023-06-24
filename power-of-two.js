@@ -33,3 +33,5 @@ function isPowerOfTwo(n) {
 console.log(isPowerOfTwo(3));
 console.log(isPowerOfTwo(5));
 console.log(isPowerOfTwo(8));
+
+// O(logn) cause the input size gets reduced by half on each iteration
